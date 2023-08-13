@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Payments Page</title>
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="../Style sheets/Booking.css">
+        <!-- google Fonts -->
+        <link rel="stylesheet" href="link rel="preconnect href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+<body>
+      <!-- Background Image -->
+  <div class="banner">
+ 
+    <!-- Main Heading -->
+      <h3 class="back"> <a href="../Pages/Details.html">&lt; BACK </a></h3>
+        <div class="textbox">
+          <h1> BUY Tickets</h1>
+          <hr>
+          <h3>PAYMENT DETAILS</h3>
+      </div>
+  </div>
+  <div class="path">
+    Buy Tickets ► Details ► Payments
+    </div>  
+    <div class="tickets">
+        <div class="Section-1">
+          <div class="division">
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <div class="desc">
+                            <strong>Enter your card details</strong><br><br> </div>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Card number</label>
+                                <input type="text" placeholder="Your card number" maxlength="16" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Expiry date</label>
+                                <input type="date" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="input-field">
+                                <label>CVC/CVV</label>
+                                <input type="number" placeholder="Enter CVC/CVV number" maxlength="3" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Cardholder's name</label>
+                                <input type="text" placeholder="Enter cardholder's name" required>
+                            </div>
+                        </div> <br> <br>
+                    </div>
+                        <button class="button3" disabled><a href="../Pages/Summary.html"><label>PAY $</a><span></span></label></button>
+                    </div>
+                </div>
+            </div>
+        </form>
+      
+        <div class="Section-3">
+            <div class="division">
+            <strong>Booking Summary</strong><br><br>
+            <table class="BookingSummary">
+              <tr><td>Date</td><td id="dateInTable"></td></tr> 
+              <tr><td>Time </td><td id="timeInTable"></td></tr>
+              <tr><td>Duration</td><td id="durationInTime"></td></tr>
+              <tr class="headingT"><td class="boldd">TICKETS</td>
+                <td id="ticketsInTable" class="boldd">CHARGE</td></tr>
+              <tr class="headingT"><td class="boldd">TOTAL PAYABLE</td>
+                <td id="totalPayableInTable" class="boldd">$</td></tr>
+            </table>  
+            </div>
+          </div>
+       
+      </div> 
+      <br>
+      <br>
+    <!-- -----Footer----- -->
+<footer>
+    <div class="row2">
+        <div class="col">
+            <img src="../Images/logo yellow turtle.png" width="150" height="150" class="footlogo">
+            <p>"Where Turtles Find Their Forever Shells"</p>
+        </div>
+        <div class="col2">
+                <p> Follow Us On</p> 
+                <br>
+                <div class="social">
+  
+                <a href="https://www.facebook.com/"><img src="../Images/fb.png" height="10%" width="10%"></a>
+  
+                <a href="https://www.instagram.com/"><img src="../Images/ig.png" height="10%" width="10%"></a>
+  
+                <a href="https://twitter.com/"><img src="../Images/twit.png" height="10%" width="10%"></a>
+                </div>
+                
+                <br>
+                <hr>
+                <br>
+                <div class="footnav">
+                <ul>
+                    <li><a href="../Pages/index.html">Home</a></li>
+                    <li><a href="./TurtleCategories.html">Turtle Categories</a></li>
+                    <li><a href="HikkaduwaTurtleHatchery.html">Hikkaduwa Turtle Hatchery</a></li>
+                    <li><a href="./ThreatsToTurtles.html">Threats to Turtles</a></li>
+                    <li><a href="./kosgoda.html">Kosgoda Turtle Hatchery</a></li>
+                    <li><a href="./bentota.html">Bentota Turtle Hatchery</a></li>
+                    <li><a href="./Purchase&Donate.html">Purchase and Donate</a></li>
+                </ul>
+                
+                <br>
+                <br>
+                
+                
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    <br>
+    <center><p>© 2023 All rights reserved. Turtle Hatcheries Sri Lanka.</p></center>
+  </footer>
+      <script src="../JS/Payment.js"></script>
+</body>
+</html>

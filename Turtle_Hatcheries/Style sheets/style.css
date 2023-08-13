@@ -1,0 +1,799 @@
+/*Layout*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+/* variables */
+:root{
+    --padding :0 150px 0 150px;
+}
+
+/*Background Images*/
+.banner{
+    width: 100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.664),rgba(0, 0, 0, 0.801)),url(../Images/back2.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.banner1{
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.818),rgba(0, 0, 0, 0.745)),url(../Images/Hatchery.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.banner2{
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.818),rgba(17, 17, 17, 0.884)),url(../Images/hikka.jpg);
+    background-size:cover ;
+    background-position: center;
+}
+.banner3{
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(rgba(21, 21, 21, 0.885),rgba(17, 17, 17, 0.807)),url(../Images/baby6.jpg);
+    background-size:cover ;
+    background-position: center;
+}
+
+.banner5{
+    width: 100%;
+    height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.727),rgba(17, 17, 17, 0.764)),url(../Images/baby1.jpg);
+    background-size:cover ;
+    background-position: center;
+}
+/* ----------------------COMMON CONTENT--------------------------- */
+
+/*Navigation Bar*/
+nav{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#logo{
+    width: 110px;
+    cursor: pointer;
+    float: left;
+    margin-left: 50px;
+    margin-top: -40px;
+    transform: rotate(90deg);
+}
+.current{
+    color: #02d3be;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+}
+
+nav li {
+    margin-right: 10px;
+    position: relative;
+}
+
+nav li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:transparent;
+    padding: 10px;
+    display: none;
+    margin-top: 5px;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav li ul li {
+    margin: 0px 0;
+    width:150% ;
+}
+
+nav li ul li a {
+    color: rgb(224, 224, 224);
+}
+nav ul li::after{  
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+    color: #009688;
+}
+/* banner content*/
+.path{
+    padding: 25px 0 0 25px;
+    font-weight: bold;
+}
+.textbox{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 70px;
+    text-transform: uppercase;
+}
+/* Go To Top Button*/
+
+.button2{
+    margin-top: 50px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 0px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.button2:hover{
+    border: 1px solid hsl(0, 0%, 100%);
+    background: #01ceba85;
+    transition: 1s ;
+
+}
+
+/* footer */
+
+/* ------Footer Navigation------ */
+.footnav{
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    position: relative;
+    margin-left: 0;
+    
+}
+.footnav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+}
+
+.footnav li {
+    margin-right: 0px;
+    position: relative;
+    font-size: 12px;
+}
+
+.footnav li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:transparent;
+    padding: 10px;
+    display: none;
+    margin-top: 5px;
+}
+.footnav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    padding-left: 23%;
+    
+}
+
+/* -------Footer Formatting-------*/
+footer{
+    width: 100%;
+    position:absolute;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.727),rgba(17, 17, 17, 0.764)),url(../Images/footer.jpg);
+    color: #fff;
+    padding: 50px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row2{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 20%;
+    padding: 5px;
+}
+.col p{
+    font-size: 12px;
+    text-align: justify;
+    
+}
+.col2{
+    flex-basis: 75%;
+    padding: 10px;
+}
+.col2 p{
+    text-align: center;
+}
+.footlogo{
+    width: 100px;
+    transform: rotate(90deg);
+    margin-left: 30%;
+
+}
+
+/* ----------------------Home Page Content------------------------ */
+.textboxhome{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textboxhome h1{
+    font-size: 70px;
+    text-transform: uppercase;
+}
+.textbox a{
+
+    margin: 100px 0 40px;
+    font-size: 14px;
+    color: whitesmoke;
+}
+/* Explore more button */
+.explore{
+    padding-top: 100px;
+}
+
+.button{
+    margin-top: 100px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 0px solid whitesmoke;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid hsl(0, 0%, 100%);
+    background: #01ceba85;
+    transition: 1s ;
+}
+
+/* body Content */
+.TurtlePopulation{
+    padding: var(--padding);
+    text-align:center;
+}
+.TurtlePopulation h1{
+    text-align: center;
+    font-size: 60px;
+}
+.TurtlePopulation ol{
+    text-align: center;
+    align-content: center;
+}
+.TurtlePopulationIntro{
+    display: flex;
+    justify-content: space-between;
+}
+.TurtlePopulationIntro img{
+    width: 500px;
+    height: 500px;
+    padding-right: 75px;
+}
+.TurtlePopulationIntro p{
+    padding-top: 50px;
+}
+.srilankanhatcheries{
+    text-align: justify;
+}
+.mission{
+    text-transform: uppercase;
+}
+.mission h1{
+    font-size: 40px;
+}
+.visionhome{
+    flex-basis:50%;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+    background-color: #0096873d;
+    margin-inline: 10px;
+}
+.unordered{
+    text-align: justify;
+}
+.unordered a{
+    display:block;
+    color: black;
+}
+.unordered ul{
+    margin-left: 40%;
+    margin-right: 20%;
+}
+.ordered{
+    text-align: justify;
+}
+.ordered ol{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.Hatchery{
+    padding-top: 35px;
+    margin: 50px;
+    text-align:center;
+}
+
+.Hatchery h2{
+    text-align: center;
+}
+.Hatchery h1{
+    font-size: 50px;
+}
+
+/* Turtle Catergories in home page */
+
+.turtles{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-top: 50px;
+   
+}
+.row{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.photorow{
+
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    position: relative;
+    overflow:hidden ;
+   
+
+}
+.photorow img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+
+}
+.layer1{
+    background: transparent;
+    padding: 0;
+    border-radius:10px;
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: -15;
+    transition: 0.5s;
+}
+.layer1:hover{
+    background: #02c4b199;
+}
+.layer1 h2{
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(245, 245, 245, 0);
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+    
+}
+.layer1:hover h2{
+    bottom: 50%;
+    opacity: 1;
+    color: whitesmoke;
+
+}
+.turtles ol{
+    list-style:lower-greek;
+}
+
+ 
+/* --------------TURTLE CATERGORIES PAGE----------------- */
+
+.catergoryintro{
+    
+    margin: 0 50px 0 50px;
+    text-align:justify;
+}
+    .catergoryintro h1{
+    text-align: center;
+}
+    .catergoryintro ol{
+        padding: 50px;
+}
+
+.cate{
+    padding:auto ;
+}
+    .cate h1{
+        text-align: center;
+        text-transform: uppercase;
+}
+    .cate img{
+         align-content: center;
+         padding-left: 15%; 
+         height: 500px;
+         width: 500px;
+    }
+    .cate iframe{
+        height: 500px;
+         width: 500px;
+    }
+.turtlesum{
+    align-items: center;
+}
+    .turtlesum table{
+        align-items: center;
+
+    }
+    .turtlesum table td{
+        padding: 40px;
+        text-align: justify;
+    }
+    .turtlesum table tfoot td{
+        padding: 0;
+        text-align: center;
+    }
+
+
+/* -----------Hikkaduwa Turtle Hatchery Page----------- */
+
+.Hikkahatchery{
+    padding: var(--padding);
+    display: flex;
+    font-size:15px;
+    
+   
+}
+.Hikkahatchery img{
+    height: 500px;
+    width: 500px;
+    padding-left: 75px;
+  
+}
+.Hikkahatchery p{
+    padding-top: 40px;
+}
+
+.hatcheryintro{
+    text-align: center;
+    font-size: 30px;
+}
+    .hatcheryintro ul{
+    list-style:disc;
+}
+    .hatcheryintro iframe{
+        height: 500px;
+         width: 500px;
+    }
+
+.row3{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.activityrow{
+
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    position: relative;
+    overflow:hidden ;
+   
+
+}
+.activityrow img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+
+}
+.activityrow img:hover{
+    transform:translate(100px);
+}
+.layer{
+    background: transparent;
+    padding: 0;
+    border-radius:10px;
+    height: 100%;
+    width: 94%;
+    position: absolute;
+    top: 0;
+    left: -15;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: #02c4b199;
+}
+.layer h2{
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(245, 245, 245, 0);
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+    
+}
+.layer:hover h2{
+    bottom: 80%;
+    opacity: 1;
+    color: whitesmoke;
+
+}
+.layer p{
+    width: 80%;
+    font-weight:500;
+    color: rgba(245, 245, 245, 0);
+    font-size: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+.layer:hover p{
+    bottom: 25%;
+    opacity: 1;
+    color: whitesmoke;
+}
+
+    /* ------------------Threats to Turtles page--------------- */
+
+.threatinfo{
+    text-align: center;
+    padding:100px 80px 0 100px ;
+}
+.vision{
+    flex-basis:50%;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center ;
+    align-content: center;
+    background-color: #0096873d;
+    margin-inline: 10px;
+}
+.threat img{
+    height: 400px;
+    width: 400px;
+    padding-left: 50px;
+    border-radius: 20px;
+
+}
+
+.para1
+{
+    display: flex;
+    padding:0 80px 0 80px ;
+}
+.threatlink{
+    padding-left: 34%;
+}
+.introlink{
+    text-align: center;
+    padding:0 80px 0 80px
+}
+.button3{
+    margin-top: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.button3:hover{
+    border: 1px solid hsl(0, 0%, 100%);
+    background: #01ceba85;
+    transition: 1s ;
+}
+ /* --------------------------Purchase & Donate------------------------ */
+ /* Donate */
+ .donatehead{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+ }
+ .donatebody{
+    padding-left: 80px;
+ }
+ .amount{
+    margin-left:25px ;
+ }
+
+ /* Purchase */
+ .purchasehead{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+ }
+ .purchasebody{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-top: 50px;   
+}
+
+.row4{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.photorow2{
+
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    position: relative;
+    overflow:hidden ;
+   
+
+}
+.photorow2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+
+}
+.layer2{
+    background: transparent;
+    padding: 0;
+    border-radius:10px;
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: -15;
+    transition: 0.5s;
+}
+.layer2:hover{
+    background: #02c4b199;
+}
+.layer2 h2{
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(245, 245, 245, 0);
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+    
+}
+.layer2:hover h2{
+    bottom: 50%;
+    opacity: 1;
+    color: whitesmoke;
+
+}
+
+
+
+@media screen and (max-width:500px) and (min-width:300px)
+{
+    .banner{
+        background-size: cover;
+        width: 150%;
+    }
+    nav{
+        font-size: 9px;
+        display: inline-block;
+    }
+   body{
+        font-size:12px;
+    }
+    .textboxhome h1{
+        font-size: 45px;
+        width: 150%;
+    }
+    .explore{
+       margin-left: 53%;
+    }
+    #logo{
+        width: 100px;
+        cursor: pointer;
+        float: center;
+        padding-left: 60%;
+        margin-top: -200px;
+    }
+    .TurtlePopulation h1{
+        font-size: 20px;
+        width: 500%;
+        margin-left: -100%;
+    }
+    .TurtlePopulationIntro img{
+        width: 200px;
+        height: 200px;
+    }
+    .TurtlePopulationIntro p{
+        margin-top: 80%;
+        width: -800%;
+        margin-left: -150%;
+    }
+    .TurtlePopulationIntro{
+        width: 300%;
+        margin-left: 50%;
+    }
+    hr{
+        width: 300%;
+    }
+}
+
